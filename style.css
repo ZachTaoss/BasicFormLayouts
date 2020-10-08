@@ -1,0 +1,70 @@
+html,body{
+    margin:0;
+    page-break-after:0;
+}
+html{
+    font-size: 10px;
+    background-color: whitesmoke;
+}
+body{
+    width: 70%;
+    margin: 0 auto;
+}
+/* form setting */
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    /* form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li+li{
+    margin-top: 1em;
+}
+label{
+    /*uniform size and alignment*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+.button{
+    /*align button with the text fields*/
+    padding-left: 90px;
+    /*This needs to be the same size as the label elements */
+}
+button{
+    /*this extra margin represents roughly the same space as the space between the labels and their text fields */
+    margin-left: .5em;
+}
+
+input, textarea{
+    /* To make sure that all text fields have the same font setting by defalut, text areas have monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field sizes */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form Borders */
+    border: 1px solid #999;
+}
+
+input:focus,textarea:focus{
+    border: crimson;
+}
+
+textarea{
+    /* align multiline texts fields  */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
